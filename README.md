@@ -33,6 +33,19 @@ Une liste est une structure de données fondamentale en programmation : elle per
 
 Cette définition, très élégante (on n'a pas parlé de pointeurs), appelle directement à utiliser la liste avec des algorithmes récursifs.
 
+## Polymorphisme
+Il est possibe de définir une fonction générique, en précisant les paramètres de type entre crochets.
+Exemples
+```scala
+scala> def id[A](x: A) = x;
+id: [A](x: A)A
+On peut instancier cette fonction sans préciser son type, qui est determiné automatiquement à
+partir du type des arguments, par exemple :
+scala> val c = id('A');
+c: Char = A
+scala> val i = id(3);
+i: Int = 3
+```
 ## Exercice: Tri par insertion    
 L'algorithme du tri par insertion est découpé  en deux fonctions.
 * La fonction "insert" qui insère un élément à la bonne position dans la liste
