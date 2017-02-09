@@ -35,12 +35,12 @@ Cette définition, très élégante (on n'a pas parlé de pointeurs), appelle di
 
 ## Exercice: Tri par insertion    
 L'algorithme du tri par insertion est découpé  en deux fonctions.
-* La fonction "insérer" qui insère un élément à la bonne position dans la liste
-* la fonction "tri_insertion", qui réutilise la fonction insérer pour trier le tableau, en insérant chaque élément successivement à la bonne place
+* La fonction "insert" qui insère un élément à la bonne position dans la liste
+* la fonction "triIns", qui réutilise la fonction insérer pour trier le tableau, en insérant chaque élément successivement à la bonne place
 
  Leur signatures sont les suivantes:
 ```scala
-def ins(elem :Int, list: List[Int]):  List[Int]
+def insert(elem :Int, list: List[Int]):  List[Int]
 
-def tri(list: List[Int]): List[Int] 
+def triIns(list: List[Int]): List[Int] 
 ```
