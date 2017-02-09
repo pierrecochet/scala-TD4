@@ -37,13 +37,14 @@ Cette définition, très élégante (on n'a pas parlé de pointeurs), appelle di
 Il est possibe de définir une fonction générique, en précisant les paramètres de type entre crochets.
 Exemples
 ```scala
-scala> def id[A](x: A) = x;
+scala> def id[A](x: A) = x
 id: [A](x: A)A
-On peut instancier cette fonction sans préciser son type, qui est determiné automatiquement à
-partir du type des arguments, par exemple :
-scala> val c = id('A');
+```
+On peut instancier cette fonction sans préciser son type, qui est determiné automatiquement à partir du type des arguments, par exemple :
+```scala
+scala> val c = id('A')
 c: Char = A
-scala> val i = id(3);
+scala> val i = id(3)
 i: Int = 3
 ```
 ## Exercice: Tri par insertion    
