@@ -1,3 +1,4 @@
+# [**correction TD3**](https://github.com/poussard/scala-TD3/blob/master/correction.md)
 # Programmation fonctionnelle -TD4
 
 Le but de ce TD est d'implémenter la méthode de tri par insertion
