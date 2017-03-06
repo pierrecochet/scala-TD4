@@ -50,7 +50,7 @@ def insert(elem: Int, myList: List[Int]): List[Int] =
     {
       myList match {
         case Nil => elem :: Nil
-        case tete :: queue  if (fonctionOrdre(elem, tete)) => elem :: myList else
+        case tete :: queue  if (fonctionOrdre(elem, tete)) => elem :: myList
         case tete :: queue  => tete :: (insert(elem, queue, fonctionOrdre))
       }
     }
